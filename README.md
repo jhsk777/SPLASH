@@ -96,3 +96,6 @@ python train_node_property_prediction_TGB.py --data <NameOfTGBDATA> --config con
 python train_node_property_prediction.py --data <NameOfOTHERDATA> --config config/<OtherBaselines>.yml --selcted_feature random
 
 ```
+
+### License
+Our codes are licensed under the Apache-2.0 License.
