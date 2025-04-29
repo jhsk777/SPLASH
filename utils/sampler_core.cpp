@@ -214,6 +214,9 @@ class ParallelSampler
             {
                 root_nodes = &_root_nodes;
                 root_ts = &_root_ts;
+            }else { // add a else to initialize them
+                root_nodes = &(ret[ret.size() - 1 - num_history].nodes);
+                root_ts = &(ret[ret.size() - 1 - num_history].ts);
             }
             double t_ptr_s = omp_get_wtime();
             if (use_ptr)
